@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEED 草野球チーム（熊本）</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+      background: #f4f7f4;
+      color: #222;
+    }
+    header {
+      background: #1b5e20;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-left: 6px solid #2e7d32;
+      padding-left: 12px;
+      margin-bottom: 15px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      background: #1b5e20;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    .btn {
+      display: inline-block;
+      background: #2e7d32;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #1b5e20;
+    }
+    .hero {
+      position: relative; /* 追加 */
+      background-image: url('team.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #1b5e20;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h1,
+    .hero p {
+      position: relative;
+      background: rgba(255, 255, 255, 0.85);
+      color: #1b5e20;
+      padding: 12px 22px;
+      border-radius: 10px;
+      margin: 8px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+  </style>
+</head>
+<body>
+
+<header class="hero">
+<h1>WEED</h1>
+<p>熊本を中心に活動する真剣草野球チーム</p>
+</header>
+
+<section>
+  <div class="card">
+  <h2>チーム紹介</h2>
+
+  <p>
+    <strong>WEED（ウィード）</strong>は、熊本を拠点に活動する草野球チームです。<br>
+    「<strong>草野球でも本気</strong>」をモットーに、勝利と個々の成長を大切にしながら日々活動しています。
+  </p>
+
+  <p>
+    チームは<strong>約40年以上の歴史</strong>があり、学生から50代・60代・70代まで在籍する幅広い年代の<br>
+    メンバーが集まる大所帯のチームです。
+  </p>
+
+  <p>
+    掲載している写真は、還暦チームが九州大会に出場した際の集合写真です。<br>
+    若手メンバーはいつもギリギリの人数のため写真はありませんが、<br>
+    今後メンバーが揃い次第、改めて集合写真を撮影する予定です。
+  </p>
+  </div>
+
+  <div class="card">
+    <h2>活動内容</h2>
+    <ul>
+      <li>主に熊本県内での活動</li>
+      <li><strong>練習日：主に第1・第3日曜日</strong></li>
+      <li>対外試合・大会への参加</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>メンバー募集</h2>
+    <p>
+      WEEDでは常に新メンバーを募集しています。<br />
+      初心者大歓迎。真剣に野球へ取り組める方を求めています。
+    </p>
+    <p>
+      <strong>年齢層：</strong>大学生〜80代まで在籍<br />
+      <strong>レベル：</strong>初心者多数。気軽に入れると思います。<br />
+      <strong>募集条件：</strong><br />
+      ・チーム活動に継続的に参加できる方
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>お問い合わせ</h2>
+    <p>
+      以下のフォームからお気軽にお問い合わせください。<br />
+    </p>
+    <form action="https://formspree.io/f/mgoowqbv" method="POST">
+      <p>
+        <label>お名前<br />
+          <input type="text" name="name" required style="width:100%; padding:8px;" />
+        </label>
+      </p>
+      <p>
+        <label>メールアドレス<br />
+          <input type="email" name="email" required style="width:100%; padding:8px;" />
+        </label>
+      </p>
+      <p>
+        <label>お問い合わせ内容<br />
+          <textarea name="message" rows="4" style="width:100%; padding:8px;"></textarea>
+        </label>
+      </p>
+      <input type="hidden" name="_replyto" value="weed.weed.1991yakyu@gmail.com" />
+      <p>
+        <button type="submit" class="btn">送信</button>
+      </p>
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  <p>© WEED Baseball Team</p>
+</footer>
+
+</body>
+</html>
